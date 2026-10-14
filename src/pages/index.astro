@@ -3,7 +3,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { concepts } from "../data/concepts";
 
 const base = import.meta.env.BASE_URL;
-const portfolio = "https://cindyhexd.github.io/projects-and-notes/";
 ---
 
 <BaseLayout
@@ -13,8 +12,6 @@ const portfolio = "https://cindyhexd.github.io/projects-and-notes/";
   faviconEmoji="🔢"
 >
   <div class="page">
-    <a class="back" href={portfolio}>← Projects and notes</a>
-
     <header class="hero">
       <h1>Intro Linear Algebra concepts</h1>
       <p class="lede">
@@ -49,17 +46,6 @@ const portfolio = "https://cindyhexd.github.io/projects-and-notes/";
     max-width: 40rem;
     margin: 0 auto;
     padding: 1.25rem 1.25rem 3.5rem;
-    color: #18181b;
-  }
-  .back {
-    display: inline-block;
-    margin-bottom: 1.75rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #71717a;
-    text-decoration: none;
-  }
-  .back:hover {
     color: #18181b;
   }
   .hero {
